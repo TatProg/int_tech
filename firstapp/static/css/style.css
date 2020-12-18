@@ -1,0 +1,20 @@
+body {
+	font-family: Verdana;
+}
+
+h1 {
+	color: #ff0000;
+}
+
+img {
+	width: 350px;
+}
+
+.avatar {
+	width: 350px;
+	height: auto;
+}
+
+.display-none {
+	display: none;
+}

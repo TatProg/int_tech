@@ -1,0 +1,15 @@
+body {
+    font-family: Verdana;
+}
+
+h1 {
+    color: black;
+}
+
+img {
+    width: 400px;
+}
+
+.hidden {
+    visibility: hidden;
+}

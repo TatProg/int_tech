@@ -1,0 +1,7 @@
+<h1>Новый студент</h1>
+
+<form action="/list/new" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+</form>

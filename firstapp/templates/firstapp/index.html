@@ -1,0 +1,27 @@
+<!DOCTYPE html>{% load static %}
+
+<html>
+<head>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}"/>
+    <meta charset="utf-8"/>
+    <title>Модели в Django</title></head>
+<body class="container">
+{% if text.count > 0 %} <h2>Список сообщений</h2>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Наименование</th>
+            <th>текст</th>
+            <th>Дата публикации новости</th>
+        </tr>
+        {% for post in text %}
+            <tr>
+                <td>{{ post.author }}</td>
+                <td>{{ post.title }}</td>
+                <td>{{ post.text }}</td>
+                <td>{{ post.published_date }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %} </body>
+</html>
